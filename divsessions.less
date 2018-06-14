@@ -1,0 +1,81 @@
+@gray: #3f3f3f;
+@pink: #ff0883;
+@green: #83ff08;
+@orange: #ff8308;
+@blue: #0883ff;
+@purple: #8308ff;
+@teal: #08ff83;
+@lightgray: #bebebe;
+
+@lightergray: #474747;
+@lightpink: #ff1e8e;
+@lightgreen: #8eff1e;
+@lightorange: #ff8e1e;
+@lightblue: #1e8eff;
+@lightpurple: #8e1eff;
+@lightteal: #1eff8e;
+@lightestgray: #c4c4c4;
+
+@background: #1f1305;
+@foreground: #b4e1fd;
+
+
+body {
+    background-color: @gray;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+h1 {
+    color: @orange;
+    font-family: monospace, sans-serif;
+    margin: 0px;
+    padding: 10px;
+    background-color: @background;
+}
+
+div.profound-sessions {
+    border-collapse: collapse;
+    border: 2px solid @foreground;
+    font-family: monospace, sans-serif;
+    color: @foreground;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: @background;
+}
+
+div.profound-sessions .ssid,
+div.profound-sessions .path {
+    width: 100%;
+}
+
+div.profound-sessions .user,
+div.profound-sessions .expr,
+div.profound-sessions .scrn {
+    flex-grow: 1;
+}
+
+div.profound-sessions .init,
+div.profound-sessions .modl {
+    flex-grow: 2;
+}
+
+div.profound-sessions .ssid,
+div.profound-sessions .path,
+div.profound-sessions .user,
+div.profound-sessions .expr,
+div.profound-sessions .scrn,
+div.profound-sessions .init,
+div.profound-sessions .modl {
+    padding: 5px;
+}
+
+div.profound-sessions div div.header {
+    font-weight: bold;
+}
+
+div.profound-sessions div div.content {}
