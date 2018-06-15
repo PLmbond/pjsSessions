@@ -3,128 +3,118 @@
 <html>
 
 <head>
-    <title>Profound UI Sessions</title>
+    <title>Profound.js Sessions</title>
 
-    <link rel="stylesheet" type="text/css" href="divsessions.css">
+    <link rel='stylesheet' type='text/css' href='divsessions.css'>
 
 </head>
 
 <body>
-    <div id="header">
-        <div id="title">Profound UI Sessions</div>
-        <div id="date"></div>
+    <div id='header'>
+        <div id='title'>Profound.js Sessions</div>
+        <div id='date'></div>
         <script>
             var d = new Date();
             var t = d.toTimeString().substring(0, 8);
             var mdy = d.toDateString();
-            document.getElementById("date").innerHTML = "Displayed at: " + t + ", " + (d.getMonth() + 1) +
-                "/" + (d.getDate()) + "/" + (d.getFullYear());
+            document.getElementById('date').innerHTML = 'Displayed at: ' + t + ', ' + (d.getMonth() + 1) +
+                '/' + (d.getDate()) + '/' + (d.getFullYear());
         </script>
     </div>
-    <span class="copy">Clicking a cell or its header will copy the content to the clipboard. (i.e. Clicking User or the username will copy the
+    <span class='copy'>Clicking a cell or its header will copy the content to the clipboard. (i.e. Clicking User or the username will copy the
         username to the clipboard.)</span>
-    <div id="container" class="profound-sessions">
-        <div id="row1">
-            <div class="user" onClick="copyDivToClipboard(this)">
-                <div class="header">User</div>
-                <div class="content">MBOND</div>
-            </div>
-            <div class="ssid" onClick="copyDivToClipboard(this)">
-                <div class="header">Session Id</div>
-                <div class="content">E2F54277766953BECB8E037BD0BC796A80E707D25FF239D43C35A42BB45DABF3</div>
-            </div>
-            <div class="expr" onClick="copyDivToClipboard(this)">
-                <div class="header">Expires</div>
-                <div class="content">16:47:40</div>
-            </div>
+    <div id='container' class='profound-sessions'>
+        <div class='user' onClick='copyDivToClipboard(this)'>
+            <div class='header'>User</div>
+            <div class='content'>MBOND</div>
         </div>
-        <div class="init" onClick="copyDivToClipboard(this)">
-            <div class="header">Initial Module</div>
-            <div class="content">pjssamples/hello2</div>
+        <div class='ssid' onClick='copyDivToClipboard(this)'>
+            <div class='header'>Session Id</div>
+            <div class='content'>E2F54277766953BECB8E037BD0BC796A80E707D25FF239D43C35A42BB45DABF3</div>
         </div>
-        <div class="modl" onClick="copyDivToClipboard(this)">
-            <div class="header">Current Module</div>
-            <div class="content">pjssamples/hello2.js</div>
+        <div class='expr' onClick='copyDivToClipboard(this)'>
+            <div class='header'>Expires</div>
+            <div class='content'>16:47:40</div>
         </div>
-        <div class="scrn" onClick="copyDivToClipboard(this)">
-            <div class="header">Current Screen</div>
-            <div class="content">screen1</div>
+        <div class='init' onClick='copyDivToClipboard(this)'>
+            <div class='header'>Initial Module</div>
+            <div class='content'>pjssamples/hello2</div>
         </div>
-        <div class="path" onClick="copyDivToClipboard(this)">
-            <div class="header">Path List</div>
-            <div class="content">pjssamples, powerup18, demolib, pjshello, profoundui, puisupport, matthewd, drusso, sqlapp, klaw, pjs_ghop, puidivain,
+        <div class='modl' onClick='copyDivToClipboard(this)'>
+            <div class='header'>Current Module</div>
+            <div class='content'>pjssamples/hello2.js</div>
+        </div>
+        <div class='scrn' onClick='copyDivToClipboard(this)'>
+            <div class='header'>Current Screen</div>
+            <div class='content'>screen1</div>
+        </div>
+        <div class='path' onClick='copyDivToClipboard(this)'>
+            <div class='header'>Path List</div>
+            <div class='content'>pjssamples, powerup18, demolib, pjshello, profoundui, puisupport, matthewd, drusso, sqlapp, klaw, pjs_ghop, puidivain,
                 npokal
             </div>
         </div>
     </div>
     <hr>
-    <div id="container" class="profound-sessions">
-        <div id="row1">
-            <div class="user" onClick="copyDivToClipboard(this)">
-                <div class="header">User</div>
-                <div class="content">MBOND</div>
-            </div>
-            <div class="ssid" onClick="copyDivToClipboard(this)">
-                <div class="header">Session Id</div>
-                <div class="content">E2F54277766953BECB8E037BD0BC796A80E707D25FF239D43C35A42BB45DABF3</div>
-            </div>
-            <div class="expr" onClick="copyDivToClipboard(this)">
-                <div class="header">Expires</div>
-                <div class="content">16:47:40</div>
-            </div>
+    <div id='container' class='profound-sessions'>
+        <div class='user' onClick='copyDivToClipboard(this)'>
+            <div class='header'>User</div>
+            <div class='content'>LYARBROUGH</div>
         </div>
-        <div class="init" onClick="copyDivToClipboard(this)">
-            <div class="header">Initial Module</div>
-            <div class="content">pjssamples/hello2</div>
+        <div class='ssid' onClick='copyDivToClipboard(this)'>
+            <div class='header'>Session Id</div>
+            <div class='content'>F6D27E54B0A04D3F3212C704BD2EFB4D6A34E30EE3270E84A8DD6257CB1C2DED</div>
         </div>
-        <div class="modl" onClick="copyDivToClipboard(this)">
-            <div class="header">Current Module</div>
-            <div class="content">pjssamples/hello2.js</div>
+        <div class='expr' onClick='copyDivToClipboard(this)'>
+            <div class='header'>Expires</div>
+            <div class='content'>17:44:20</div>
         </div>
-        <div class="scrn" onClick="copyDivToClipboard(this)">
-            <div class="header">Current Screen</div>
-            <div class="content">screen1</div>
+        <div class='init' onClick='copyDivToClipboard(this)'>
+            <div class='header'>Initial Module</div>
+            <div class='content'>hello2</div>
         </div>
-        <div class="path" onClick="copyDivToClipboard(this)">
-            <div class="header">Path List</div>
-            <div class="content">pjssamples, powerup18, demolib, pjshello, profoundui, puisupport, matthewd, drusso, sqlapp, klaw, pjs_ghop, puidivain,
-                npokal
-            </div>
+        <div class='modl' onClick='copyDivToClipboard(this)'>
+            <div class='header'>Current Module</div>
+            <div class='content'>hello2.js</div>
+        </div>
+        <div class='scrn' onClick='copyDivToClipboard(this)'>
+            <div class='header'>Current Screen</div>
+            <div class='content'>screen1</div>
+        </div>
+        <div class='path' onClick='copyDivToClipboard(this)'>
+            <div class='header'>Path List</div>
+            <div class='content'>QSYS, QSYS2, QHLPSYS, QUSRSYS, PROFOUNDJS, LYARBROUGH, QGPL, QTEMP, PROFOUNDJS, PUISUPPORT, PUIDEV, UTILS</div>
         </div>
     </div>
     <hr>
-    <div id="container" class="profound-sessions">
-        <div id="row1">
-            <div class="user" onClick="copyDivToClipboard(this)">
-                <div class="header">User</div>
-                <div class="content">MBOND</div>
-            </div>
-            <div class="ssid" onClick="copyDivToClipboard(this)">
-                <div class="header">Session Id</div>
-                <div class="content">E2F54277766953BECB8E037BD0BC796A80E707D25FF239D43C35A42BB45DABF3</div>
-            </div>
-            <div class="expr" onClick="copyDivToClipboard(this)">
-                <div class="header">Expires</div>
-                <div class="content">16:47:40</div>
-            </div>
+    <div id='container' class='profound-sessions'>
+        <div class='user' onClick='copyDivToClipboard(this)'>
+            <div class='header'>User</div>
+            <div class='content'>ECULLUM</div>
         </div>
-        <div class="init" onClick="copyDivToClipboard(this)">
-            <div class="header">Initial Module</div>
-            <div class="content">pjssamples/hello2</div>
+        <div class='ssid' onClick='copyDivToClipboard(this)'>
+            <div class='header'>Session Id</div>
+            <div class='content'>7FD2124252F8E58641DB97F2AAEA0583B810B955C230D986B1DFD03C516BB1F3</div>
         </div>
-        <div class="modl" onClick="copyDivToClipboard(this)">
-            <div class="header">Current Module</div>
-            <div class="content">pjssamples/hello2.js</div>
+        <div class='expr' onClick='copyDivToClipboard(this)'>
+            <div class='header'>Expires</div>
+            <div class='content'>17:52:03</div>
         </div>
-        <div class="scrn" onClick="copyDivToClipboard(this)">
-            <div class="header">Current Screen</div>
-            <div class="content">screen1</div>
+        <div class='init' onClick='copyDivToClipboard(this)'>
+            <div class='header'>Initial Module</div>
+            <div class='content'>pjssupport/hello2</div>
         </div>
-        <div class="path" onClick="copyDivToClipboard(this)">
-            <div class="header">Path List</div>
-            <div class="content">pjssamples, powerup18, demolib, pjshello, profoundui, puisupport, matthewd, drusso, sqlapp, klaw, pjs_ghop, puidivain,
-                npokal
-            </div>
+        <div class='modl' onClick='copyDivToClipboard(this)'>
+            <div class='header'>Current Module</div>
+            <div class='content'>pjssupport/hello2.js</div>
+        </div>
+        <div class='scrn' onClick='copyDivToClipboard(this)'>
+            <div class='header'>Current Screen</div>
+            <div class='content'>errscn</div>
+        </div>
+        <div class='path' onClick='copyDivToClipboard(this)'>
+            <div class='header'>Path List</div>
+            <div class='content'>QSYS, QSYS2, QHLPSYS, QUSRSYS, PROFOUNDJS, PROFOUNDJS, ECULLUM, PUISUPPORT, QGPL, QTEMP, PUIDEV, UTILS</div>
         </div>
     </div>
     <script>
@@ -134,7 +124,7 @@
             var sel = window.getSelection();
             sel.removeAllRanges();
             sel.addRange(range);
-            document.execCommand("copy");
+            document.execCommand('copy');
             sel.removeAllRanges();
         }
     </script>
