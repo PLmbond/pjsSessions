@@ -1,54 +1,109 @@
-@gray: #3f3f3f;
-@pink: #ff0883;
-@green: #83ff08;
-@orange: #ff8308;
-@blue: #0883ff;
-@purple: #8308ff;
-@teal: #08ff83;
-@lightgray: #bebebe;
-
-@lightergray: #474747;
-@lightpink: #ff1e8e;
-@lightgreen: #8eff1e;
-@lightorange: #ff8e1e;
-@lightblue: #1e8eff;
-@lightpurple: #8e1eff;
-@lightteal: #1eff8e;
-@lightestgray: #c4c4c4;
-
-@background: #1f1305;
-@foreground: #b4e1fd;
-
+@black: #2C3E50;
+@red: #C0392B;
+@green: #27AE60;
+@yellow: #F39C12;
+@blue: #2980B9;
+@purple: #8e44ad;
+@teal: #16A085;
+@gray: #BDC3C7;
+@orange: #ff8000;
+@lightblack: #34495E;
+@lightred: #E74C3C;
+@lightgreen: #2ECC71;
+@lightyellow: #F1C40F;
+@lightblue: #3498DB;
+@lightpurple: #9B59B6;
+@lightteal: #2AA198;
+@lightgray: #ECF0F1;
+@white: #FFFFFF;
+@background: #1F2D3A;
+@foreground: #1ABC9C;
+@10blue: lighten(@lightblue,10%);
+@20blue: lighten(@lightblue,20%);
+@30blue: lighten(@lightblue,30%);
+@40blue: lighten(@lightblue,40%);
+@30green: lighten(@lightgreen,30%);
+@40green: lighten(@lightgreen,40%);
+@-10blue: darken(@lightblue,10%);
+@-20blue: darken(@lightblue,20%);
+@-30blue: darken(@lightblue,30%);
+@-40blue: darken(@lightblue,40%);
+@-30green: darken(@lightgreen,30%);
+@-40green: darken(@lightgreen,40%);
+@-10white: darken(@white,10%);
+@-20white: darken(@white,20%);
+@-30white: darken(@white,30%);
+@-40white: darken(@white,40%);
 
 body {
-    background-color: @gray;
+    //background-color: @gray;
     display: flex;
     flex-flow: column nowrap;
+    background: @40blue;
 }
 
-h1 {
-    color: @orange;
-    font-family: monospace, sans-serif;
+hr {
+    width: calc(~"100% - 50px");
+    border: none;
+    border-bottom: 1px dashed @blue;
+}
+#header {
+    color: @blue;
+    font-family: sans-serif;
     margin: 0px;
     padding: 10px;
-    background-color: @background;
+    padding-bottom: 5px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-content: flex-end;
+    align-items: flex-end;
+}
+
+#title {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#date {
+    font-size: 12px;
+    padding-bottom: 2px;
+}
+
+.copy {
+    color: @lightblack;
+    font-size: 10px;
+    box-sizing: border-box;
+    padding: 2px;
+    padding-left: 10px;
+    width: 100%;
+    letter-spacing: 1px;
+    font-family: sans-serif;
 }
 
 div.profound-sessions {
-    border-collapse: collapse;
-    border: 2px solid @foreground;
-    font-family: monospace, sans-serif;
-    color: @foreground;
+    border: solid @blue;
+    border-width: 1px  0   0  1px;
+    color: @lightblack;
+    font-size: 14px;
     box-sizing: border-box;
-    width: 100%;
-    padding: 5px;
+    width: calc(~"100% -  10px");
     display: flex;
+    margin: 5px;
     flex-flow: row wrap;
     justify-content: space-around;
-    background-color: @background;
 }
 
-div.profound-sessions .ssid,
+#row1 {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+div.profound-sessions .ssid {
+    flex-grow: 6;
+}
+
 div.profound-sessions .path {
     width: 100%;
 }
@@ -61,7 +116,7 @@ div.profound-sessions .scrn {
 
 div.profound-sessions .init,
 div.profound-sessions .modl {
-    flex-grow: 2;
+    flex-grow: 4;
 }
 
 div.profound-sessions .ssid,
@@ -71,11 +126,39 @@ div.profound-sessions .expr,
 div.profound-sessions .scrn,
 div.profound-sessions .init,
 div.profound-sessions .modl {
-    padding: 5px;
+    border-width: 0 1px 1px 0;
 }
 
 div.profound-sessions div div.header {
-    font-weight: bold;
+    //font-weight: bold;
+    border: solid @blue;
+    border-width: 0 1px 1px 0;
+    background-color: @-10blue;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    font-family: sans-serif;
+    color: white;
 }
 
-div.profound-sessions div div.content {}
+div.profound-sessions div div.content {
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    font-family: monospace;
+    border: solid @blue;
+    border-width: 0 1px 1px 0;
+    background-color: @30blue;
+}
+
+div.profound-sessions div.ssid:hover div.content,
+div.profound-sessions div.path:hover div.content,
+div.profound-sessions div.user:hover div.content,
+div.profound-sessions div.expr:hover div.content,
+div.profound-sessions div.scrn:hover div.content,
+div.profound-sessions div.init:hover div.content,
+div.profound-sessions div.modl:hover div.content {
+    color: @purple;
+}
